@@ -11,4 +11,4 @@
   apt-get install git -y 
   apt-get install wget -y 
   apt-get install unzip -y 
-  sudo apt install build-essential git nvidia-cuda-toolkit
+  
